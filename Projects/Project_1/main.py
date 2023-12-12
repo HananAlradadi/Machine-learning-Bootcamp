@@ -8,7 +8,7 @@ st.markdown('''
 Welcome, come to discover the exact prices of cars.  No more being scammed when buying or selling a car.  Thanks to the magic of machine learning'''
 )
 
-final_model = pickle.load(open(os.path.abspath('final_model.sav'), 'rb'))
+final_model = pickle.load(open(os.path.abspath('Projects/Project_1/final_model.sav'), 'rb'))
 
 
 
