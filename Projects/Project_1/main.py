@@ -1,13 +1,14 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import os
 st.title('car price predicted')
 st.write('# car price predicted')  
 st.markdown('''
 Welcome, come to discover the exact prices of cars.  No more being scammed when buying or selling a car.  Thanks to the magic of machine learning'''
 )
 
-final_model = pickle.load(open('final_model.sav', 'rb'))
+final_model = pickle.load(open(os.path.abspath('final_model.sav'), 'rb'))
 
 
 
