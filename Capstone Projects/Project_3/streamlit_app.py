@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 import pickle
 import numpy as np
-
+import os
 selected = option_menu(
     menu_title = "Main Menu",
     options = ["Home","Model","Contact"],
@@ -15,9 +15,9 @@ selected = option_menu(
     default_index = 0,
   )
 
-df = pd.read_csv("creditcard.csv")
+#df = pd.read_csv("creditcard.csv")
 
-filename = "final_model.sav"
+filename = os.path.abspath("Capstone Projects/Project_3/final_model.sav")
 model=pickle.load(open(filename, "rb"))
 
 
