@@ -1,2 +1,2 @@
-# requirements.txt
-snowflake-connector-python
+scikit-learn==1.2.2
+streamlit==1.22.0
