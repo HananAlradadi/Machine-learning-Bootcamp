@@ -13,6 +13,7 @@ final_model = pickle.load(open(os.path.abspath('Projects/Project_1/final_model.s
 
 
 data = pd.read_csv((os.path.abspath('Projects/Project_1/cleaneData.csv'))
+                   
 with st.form("my_form"):
    make_model = st.selectbox('Select the model of your car',data['make_model'].unique() )
    power_kW = st.number_input('Enter the horsepower of your car')
